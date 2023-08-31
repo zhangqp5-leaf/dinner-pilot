@@ -1,9 +1,8 @@
-
 const dishLink = 'https://loquatlo.gitee.io/img-bed/food-imgs/';
 
 export const dishList = [
   {
-    url: `${dishLink}1.jpg`,
+    url: `${dishLink}12.jpg`,
     type: '1',
     dishName: '香辣排骨',
     ingredients: '排骨、青辣椒、红辣椒、豆瓣酱',
@@ -127,7 +126,7 @@ export const dishList = [
     ],
   },
   {
-    url: `${dishLink}11.jpg`,
+    url: `${dishLink}12.jpg`,
     type: '3',
     dishName: '蒸米饭',
     ingredients: '大米',
@@ -136,7 +135,7 @@ export const dishList = [
     ],
   },
   {
-    url: `${dishLink}11.jpg`,
+    url: `${dishLink}13.jpg`,
     type: '3',
     dishName: '馒头',
     ingredients: '钱',
@@ -145,7 +144,7 @@ export const dishList = [
     ],
   },
   {
-    url: `${dishLink}11.jpg`,
+    url: `${dishLink}14.jpg`,
     type: '3',
     dishName: '油条',
     ingredients: '油条',
@@ -155,7 +154,7 @@ export const dishList = [
     ],
   },
   {
-    url: `${dishLink}11.jpg`,
+    url: `${dishLink}15.jpg`,
     type: '1',
     dishName: '京酱肉丝',
     ingredients: '鸡胸肉、黄瓜、大葱、豆皮、甜面酱',
@@ -168,7 +167,7 @@ export const dishList = [
     ],
   },
   {
-    url: `${dishLink}11.jpg`,
+    url: `${dishLink}16.jpg`,
     type: '1',
     dishName: '可乐鸡翅',
     ingredients: '鸡翅、可乐',
@@ -179,7 +178,7 @@ export const dishList = [
     ],
   },
   {
-    url: `${dishLink}11.jpg`,
+    url: `${dishLink}17.jpg`,
     type: '1',
     dishName: '花甲粉丝',
     ingredients: '花甲、粉丝、金针菇娃娃菜等配菜',
@@ -192,7 +191,7 @@ export const dishList = [
     ],
   },
   {
-    url: `${dishLink}11.jpg`,
+    url: `${dishLink}18.jpg`,
     type: '1',
     dishName: '毛血旺',
     ingredients: '鸭血、豆芽、黄鳝、午餐肉、粉丝、毛肚、百叶豆腐',
@@ -202,6 +201,29 @@ export const dishList = [
       '起锅加食用油，放入花椒粒炸香，加入辣椒段，全程小火，加入豆瓣酱炒开，翻炒均匀后加入火锅底料炒化，加入料酒，加葱姜蒜爆炒',
       '加入清水大伙煮开，炖十到十五分钟左右，捞出底料残渣，汤中加入适量的食盐、白糖、生抽',
       '先下百叶豆腐，再下粉丝，煮熟后放入鸭血、毛肚，煮一会儿捞出放在提前准备好的蔬菜上，汤汁也倒进盆里，撒上香葱末、蒜末、花椒和辣椒段，淋上热油即可',
+    ],
+  },
+  {
+    url: `${dishLink}19.jpg`,
+    type: '2',
+    dishName: '青椒土豆丝',
+    ingredients: '土豆、青椒、蒜、干辣椒',
+    steps: [
+      '土豆切丝、青椒花刀、蒜拍碎、干辣椒剪断备用',
+      '土豆丝过几遍清水洗去表面淀粉，泡入清水备用',
+      '热锅冷油，油热后加入蒜末干辣椒炒香，放入土豆丝青椒翻炒片刻，加入适量白醋',
+      '翻炒熟后加入一勺生抽，少许盐调味即可出锅',
+    ],
+  },
+  {
+    url: `${dishLink}20.jpg`,
+    type: '2',
+    dishName: '清炒藕片',
+    ingredients: '藕、蒜、小米椒',
+    steps: [
+      '藕切薄片、蒜拍碎、小米椒切段备用',
+      '水开加入白醋，下入藕片焯水',
+      '热锅冷油，油热后加入蒜末小米椒炒香，放入藕片翻炒片刻，加入生抽盐耗油翻炒均匀出锅',
     ],
   },
 ];

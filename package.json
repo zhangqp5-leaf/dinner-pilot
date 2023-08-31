@@ -38,7 +38,7 @@
     "build:quickapp-webview-huawei": "uni build -p quickapp-webview-huawei",
     "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
 		"predeploy": "npm run build:h5",
-		"deploy": "gh-pages -d dist"
+		"deploy": "gh-pages -d dist/build/h5"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-3080720230703001",

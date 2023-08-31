@@ -27,6 +27,7 @@
     <view>
 			<uni-popup ref="bottomPopup" background-color="#fff">
 				<view class="popup-content">
+          <view><img :src="selectedDish.url" alt="" style="width: 100%;"></view>
           <view class="popup-title">{{ selectedDish.dishName }}</view>
           <view>
             <text :style="{fontWeight: 600}">食材：</text>
