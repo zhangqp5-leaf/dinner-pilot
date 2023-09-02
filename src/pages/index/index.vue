@@ -1,20 +1,22 @@
 <template>
 	<view class="content">
-    <input
-      class="uni-input"
-      confirm-type="search"
-      @input="changeInputValue"
-      placeholder="请输入菜名搜索"
-    />
-    <view class="tabs">
-      <view
-        v-for="tab in tabOptions"
-        :key="tab.value"
-        class="tab"
-        :class="activeKey === tab.value ? 'active-tab' : ''"
-        @click="() => changeTab(tab.value)"
-      >
-        {{ tab.label }}
+    <view class="fix-title">
+      <input
+        class="uni-input"
+        confirm-type="search"
+        @input="changeInputValue"
+        placeholder="请输入菜名搜索"
+      />
+      <view class="tabs">
+        <view
+          v-for="tab in tabOptions"
+          :key="tab.value"
+          class="tab"
+          :class="activeKey === tab.value ? 'active-tab' : ''"
+          @click="() => changeTab(tab.value)"
+        >
+          {{ tab.label }}
+        </view>
       </view>
     </view>
     <view
@@ -115,6 +117,16 @@
     background-color: #eee;
 	}
 
+  .fix-title {
+    display: flex;
+		flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    position: sticky;
+    top: 44px;
+    background-color: #eee;
+  }
+
   .uni-input {
     padding: 8px 16px;
     margin: 8px 8px 0 8px;
@@ -124,6 +136,7 @@
 
   .tabs {
     display: flex;
+    background-color: #fff;
   }
   .tab {
     display: flex;
