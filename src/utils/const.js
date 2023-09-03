@@ -244,8 +244,12 @@ export const dishList = [
     url: `${dishLink}23.jpg`,
     type: '2',
     dishName: '清炒西葫芦',
-    ingredients: '',
-    steps: [],
+    ingredients: '空心菜、蒜、干辣椒',
+    steps: [
+      '西葫芦切薄片、蒜拍碎、小米椒切段备用',
+      '热锅冷油，油热下蒜片小米椒炒香',
+      '下入西葫芦翻炒，加入少量水炒软，加醋、生抽、耗油、盐翻炒均匀，盖上锅盖焖2-3分钟即可出锅',
+    ],
   },
   {
     url: `${dishLink}24.jpg`,
@@ -330,5 +334,16 @@ export const dishList = [
     dishName: '葱炒梭子蟹',
     ingredients: '',
     steps: [],
+  },
+  {
+    url: `${dishLink}36.jpg`,
+    type: '2',
+    dishName: '清炒空心菜',
+    ingredients: '空心菜、蒜、小米椒',
+    steps: [
+      '空心菜切段、蒜拍碎、小米椒切段备用',
+      '热锅冷油，油热下蒜片小米椒炒香',
+      '下入空心菜炒软，加入一勺生抽、一勺耗油、一勺鸡精和适量盐，翻炒均匀出锅',
+    ],
   },
 ];
