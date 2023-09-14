@@ -1,95 +1,93 @@
 <template>
 	<view>
-		<view class="form-container">
-			<form>
-				<view class="form-title">收入</view>
-				<view class="form-item">
-					<view class="form-item-left">招商银行：</view>
-					<input class="uni-input form-item-right" v-model="income.chinaMerchantsBank" placeholder="输入" />
-				</view>
-				<view class="form-item">
-					<view class="form-item-left">兴业银行：</view>
-					<input class="uni-input form-item-right" v-model="income.industrialBankOfChina" placeholder="输入" />
-				</view>
-				<view class="form-item">
-					<view class="form-item-left">基金：</view>
-					<input class="uni-input form-item-right" v-model="income.fund" placeholder="输入" />
-				</view>
-				<view class="form-item">
-					<view class="form-item-left">现金：</view>
-					<input class="uni-input form-item-right" v-model="income.cash" placeholder="输入" />
-				</view>
-				<view class="form-item">
-					<view class="form-item-left">借款：</view>
-					<input class="uni-input form-item-right" v-model="income.borrowMoney" placeholder="输入" />
-				</view>
-				<view class="form-item">
-					<view class="form-item-plural-left">工资：</view>
-					<input class="uni-input form-item-plural-middle" v-model="income.salary.salary" placeholder="输入" />
-					&nbsp;×&nbsp;
-					<input class="uni-input form-item-plural-right" v-model="income.salary.salaryCount" placeholder="输入" />
-				</view>
-				<view class="form-item">
-					<view class="form-item-plural-left">公积金：</view>
-					<input class="uni-input form-item-plural-middle" v-model="income.publicReserveFund.publicReserveFund" placeholder="输入" />
-					&nbsp;×&nbsp;
-					<input class="uni-input form-item-plural-right" v-model="income.publicReserveFund.publicReserveFundCount" placeholder="输入" />
-				</view>
-				<view class="form-item">
-					<view class="form-item-left">年终奖：</view>
-					<input class="uni-input form-item-right" v-model="income.yearEndBonus" placeholder="输入" />
-				</view>
+		<form>
+			<view class="form-title">收入</view>
+			<view class="form-item">
+				<view class="form-item-left">招商银行：</view>
+				<input class="uni-input form-item-right" v-model="income.chinaMerchantsBank" placeholder="输入" />
+			</view>
+			<view class="form-item">
+				<view class="form-item-left">兴业银行：</view>
+				<input class="uni-input form-item-right" v-model="income.industrialBankOfChina" placeholder="输入" />
+			</view>
+			<view class="form-item">
+				<view class="form-item-left">基金：</view>
+				<input class="uni-input form-item-right" v-model="income.fund" placeholder="输入" />
+			</view>
+			<view class="form-item">
+				<view class="form-item-left">现金：</view>
+				<input class="uni-input form-item-right" v-model="income.cash" placeholder="输入" />
+			</view>
+			<view class="form-item">
+				<view class="form-item-left">借款：</view>
+				<input class="uni-input form-item-right" v-model="income.borrowMoney" placeholder="输入" />
+			</view>
+			<view class="form-item">
+				<view class="form-item-plural-left">工资：</view>
+				<input class="uni-input form-item-plural-middle" v-model="income.salary.salary" placeholder="输入" />
+				&nbsp;×&nbsp;
+				<input class="uni-input form-item-plural-right" v-model="income.salary.salaryCount" placeholder="输入" />
+			</view>
+			<view class="form-item">
+				<view class="form-item-plural-left">公积金：</view>
+				<input class="uni-input form-item-plural-middle" v-model="income.publicReserveFund.publicReserveFund" placeholder="输入" />
+				&nbsp;×&nbsp;
+				<input class="uni-input form-item-plural-right" v-model="income.publicReserveFund.publicReserveFundCount" placeholder="输入" />
+			</view>
+			<view class="form-item">
+				<view class="form-item-left">年终奖：</view>
+				<input class="uni-input form-item-right" v-model="income.yearEndBonus" placeholder="输入" />
+			</view>
 
-				<view class="form-title">支出</view>
-				<view class="form-item">
-					<view class="form-item-plural-left">贷款：</view>
-					<input class="uni-input form-item-plural-middle" v-model="outcome.loan.loan" placeholder="输入" />
-					&nbsp;×&nbsp;
-					<input class="uni-input form-item-plural-right" v-model="outcome.loan.loanCount" placeholder="输入" />
-				</view>
-				<view class="form-item">
-					<view class="form-item-plural-left">生活费1：</view>
-					<input class="uni-input form-item-plural-middle" v-model="outcome.livingExpenses1.livingExpenses1" placeholder="输入" />
-					&nbsp;×&nbsp;
-					<input class="uni-input form-item-plural-right" v-model="outcome.livingExpenses1.livingExpenses1Count" placeholder="输入" />
-				</view>
-				<view class="form-item">
-					<view class="form-item-plural-left">生活费2：</view>
-					<input class="uni-input form-item-plural-middle" v-model="outcome.livingExpenses2.livingExpenses2" placeholder="输入" />
-					&nbsp;×&nbsp;
-					<input class="uni-input form-item-plural-right" v-model="outcome.livingExpenses2.livingExpenses2Count" placeholder="输入" />
-				</view>
-				<view class="form-item">
-					<view class="form-item-left">彩礼：</view>
-					<input class="uni-input form-item-right" v-model="outcome.betrothalGifts" placeholder="输入" />
-				</view>
-				<view class="form-item">
-					<view class="form-item-left">手镯：</view>
-					<input class="uni-input form-item-right" v-model="outcome.bracelet" placeholder="输入" />
-				</view>
-				<view class="form-item">
-					<view class="form-item-plural-left">房租：</view>
-					<input class="uni-input form-item-plural-middle" v-model="outcome.rent.rent" placeholder="输入" />
-					&nbsp;×&nbsp;
-					<input class="uni-input form-item-plural-right" v-model="outcome.rent.rentCount" placeholder="输入" />
-				</view>
+			<view class="form-title">支出</view>
+			<view class="form-item">
+				<view class="form-item-plural-left">贷款：</view>
+				<input class="uni-input form-item-plural-middle" v-model="outcome.loan.loan" placeholder="输入" />
+				&nbsp;×&nbsp;
+				<input class="uni-input form-item-plural-right" v-model="outcome.loan.loanCount" placeholder="输入" />
+			</view>
+			<view class="form-item">
+				<view class="form-item-plural-left">生活费1：</view>
+				<input class="uni-input form-item-plural-middle" v-model="outcome.livingExpenses1.livingExpenses1" placeholder="输入" />
+				&nbsp;×&nbsp;
+				<input class="uni-input form-item-plural-right" v-model="outcome.livingExpenses1.livingExpenses1Count" placeholder="输入" />
+			</view>
+			<view class="form-item">
+				<view class="form-item-plural-left">生活费2：</view>
+				<input class="uni-input form-item-plural-middle" v-model="outcome.livingExpenses2.livingExpenses2" placeholder="输入" />
+				&nbsp;×&nbsp;
+				<input class="uni-input form-item-plural-right" v-model="outcome.livingExpenses2.livingExpenses2Count" placeholder="输入" />
+			</view>
+			<view class="form-item">
+				<view class="form-item-left">彩礼：</view>
+				<input class="uni-input form-item-right" v-model="outcome.betrothalGifts" placeholder="输入" />
+			</view>
+			<view class="form-item">
+				<view class="form-item-left">手镯：</view>
+				<input class="uni-input form-item-right" v-model="outcome.bracelet" placeholder="输入" />
+			</view>
+			<view class="form-item">
+				<view class="form-item-plural-left">房租：</view>
+				<input class="uni-input form-item-plural-middle" v-model="outcome.rent.rent" placeholder="输入" />
+				&nbsp;×&nbsp;
+				<input class="uni-input form-item-plural-right" v-model="outcome.rent.rentCount" placeholder="输入" />
+			</view>
 
-				<view class="form-title">结果</view>
-				<view class="form-item">
-					<view class="form-item-left">收入：</view>
-					<input class="uni-input form-item-right" v-model="incomeSum" placeholder="输入" />
-				</view>
-				<view class="form-item">
-					<view class="form-item-left">支出：</view>
-					<input class="uni-input form-item-right" v-model="outcomeSum" placeholder="输入" />
-				</view>
-				<view class="form-item">
-					<view class="form-item-left">余额：</view>
-					<input class="uni-input form-item-right" v-model="unfilledVacancies" placeholder="输入" />
-				</view>
+			<view class="form-title">结果</view>
+			<view class="form-item">
+				<view class="form-item-left">收入：</view>
+				<input class="uni-input form-item-right" v-model="incomeSum" placeholder="输入" />
+			</view>
+			<view class="form-item">
+				<view class="form-item-left">支出：</view>
+				<input class="uni-input form-item-right" v-model="outcomeSum" placeholder="输入" />
+			</view>
+			<view class="form-item">
+				<view class="form-item-left">余额：</view>
+				<input class="uni-input form-item-right" v-model="unfilledVacancies" placeholder="输入" />
+			</view>
 
-			</form>
-		</view>
+		</form>
 		<button type="primary" class="bottom-button" @click="submit">计算</button>
 	</view>
 </template>
@@ -174,10 +172,6 @@ export default {
 </script>
 
 <style>
-.form-container {
-	height: calc(100vh - 200px);
-	overflow: auto;
-}
 .form-title {
 	display: flex;
 	align-items: center;
@@ -209,8 +203,8 @@ export default {
 	flex: 1;
 }
 .bottom-button {
-	position: absolute;
-	bottom: 4px;
+	position: sticky;
+	bottom: 0;
 	width: 100%;
 }
 </style>
