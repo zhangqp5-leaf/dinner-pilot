@@ -175,7 +175,7 @@ export default {
 
 <style>
 .form-container {
-	height: calc(100vh - 120px);
+	height: calc(100vh - 200px);
 	overflow: auto;
 }
 .form-title {
@@ -210,7 +210,7 @@ export default {
 }
 .bottom-button {
 	position: absolute;
-	bottom: 12px;
+	bottom: 4px;
 	width: 100%;
 }
 </style>
