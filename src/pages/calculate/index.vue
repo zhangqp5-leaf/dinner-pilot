@@ -11,6 +11,10 @@
 				<input class="uni-input form-item-right" v-model="income.industrialBankOfChina" placeholder="输入" />
 			</view>
 			<view class="form-item">
+				<view class="form-item-left">建设银行：</view>
+				<input class="uni-input form-item-right" v-model="income.constructionBank" placeholder="输入" />
+			</view>
+			<view class="form-item">
 				<view class="form-item-left">基金：</view>
 				<input class="uni-input form-item-right" v-model="income.fund" placeholder="输入" />
 			</view>
@@ -76,15 +80,15 @@
 			<view class="form-title">结果</view>
 			<view class="form-item">
 				<view class="form-item-left">收入：</view>
-				<input class="uni-input form-item-right" v-model="incomeSum" placeholder="输入" />
+				<view class="form-item-right">{{ incomeSum }}</view>
 			</view>
 			<view class="form-item">
 				<view class="form-item-left">支出：</view>
-				<input class="uni-input form-item-right" v-model="outcomeSum" placeholder="输入" />
+				<view class="form-item-right">{{ outcomeSum }}</view>
 			</view>
 			<view class="form-item">
 				<view class="form-item-left">余额：</view>
-				<input class="uni-input form-item-right" v-model="unfilledVacancies" placeholder="输入" />
+				<view class="form-item-right">{{ unfilledVacancies }}</view>
 			</view>
 
 		</form>
@@ -100,8 +104,9 @@ export default {
 			outcomeSum: 0,
 			unfilledVacancies: 0,
 			income: {
-				chinaMerchantsBank: '57247.96',
+				chinaMerchantsBank: '57264.07',
 				industrialBankOfChina: '0',
+				constructionBank: '0',
 				fund: '7600',
 				cash: '5700',
 				borrowMoney: '15000',
@@ -145,7 +150,6 @@ export default {
 			this.incomeSum = this.sum(this.income);
 			this.outcomeSum = this.sum(this.outcome);
 			this.unfilledVacancies = this.incomeSum - this.outcomeSum;
-			console.log(1);
 		},
 		sum(obj) {
 			let re = 0;
