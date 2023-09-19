@@ -42,6 +42,10 @@
 				<view class="form-item-left">年终奖：</view>
 				<input class="uni-input form-item-right" v-model="income.yearEndBonus" placeholder="输入" />
 			</view>
+			<view class="form-item">
+				<view class="form-item-left">其他：</view>
+				<input class="uni-input form-item-right" v-model="income.other" placeholder="输入" />
+			</view>
 
 			<view class="form-title">支出</view>
 			<view class="form-item">
@@ -75,6 +79,10 @@
 				<input class="uni-input form-item-plural-middle" v-model="outcome.rent.rent" placeholder="输入" />
 				&nbsp;×&nbsp;
 				<input class="uni-input form-item-plural-right" v-model="outcome.rent.rentCount" placeholder="输入" />
+			</view>
+			<view class="form-item">
+				<view class="form-item-left">其他：</view>
+				<input class="uni-input form-item-right" v-model="outcome.other" placeholder="输入" />
 			</view>
 
 			<view class="form-title">结果</view>
@@ -119,6 +127,7 @@ export default {
 					publicReserveFundCount: '1',
 				},
 				yearEndBonus: '14000',
+        other: '3750',
 			},
 			outcome: {
 				loan: {
@@ -139,6 +148,7 @@ export default {
 					rent: '7650',
 					rentCount: '2',
 				},
+        other: '0',
 			},
 		};
 	},
