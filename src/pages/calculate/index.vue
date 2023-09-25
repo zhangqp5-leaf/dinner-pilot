@@ -112,9 +112,9 @@ export default {
 			outcomeSum: 0,
 			unfilledVacancies: 0,
 			income: {
-				chinaMerchantsBank: '57264.07',
+				chinaMerchantsBank: '59689.68',
 				industrialBankOfChina: '0',
-				constructionBank: '0',
+				constructionBank: '7000',
 				fund: '7600',
 				cash: '5700',
 				borrowMoney: '15000',
@@ -124,7 +124,7 @@ export default {
 				},
 				publicReserveFund: {
 					publicReserveFund: '9000',
-					publicReserveFundCount: '1',
+					publicReserveFundCount: '0',
 				},
 				yearEndBonus: '14000',
         other: '3750',
