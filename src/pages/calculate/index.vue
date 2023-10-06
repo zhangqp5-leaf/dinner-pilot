@@ -112,9 +112,9 @@ export default {
 			outcomeSum: 0,
 			unfilledVacancies: 0,
 			income: {
-				chinaMerchantsBank: '59689.68',
+				chinaMerchantsBank: '56883.25',
 				industrialBankOfChina: '0',
-				constructionBank: '7000',
+				constructionBank: '45',
 				fund: '7600',
 				cash: '5700',
 				borrowMoney: '15000',
@@ -132,11 +132,11 @@ export default {
 			outcome: {
 				loan: {
 					loan: '6954.06',
-					loanCount: '5',
+					loanCount: '4',
 				},
 				livingExpenses1: {
 					livingExpenses1: '2000',
-					livingExpenses1Count: '2',
+					livingExpenses1Count: '1',
 				},
 				livingExpenses2: {
 					livingExpenses2: '2800',
