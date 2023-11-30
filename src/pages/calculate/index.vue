@@ -112,38 +112,38 @@ export default {
 			outcomeSum: 0,
 			unfilledVacancies: 0,
 			income: {
-				chinaMerchantsBank: '55420.32',
+				chinaMerchantsBank: '55549.37',
 				industrialBankOfChina: '0',
-				constructionBank: '36.92',
-				fund: '7600',
-				cash: '5700',
+				constructionBank: '82.88',
+				fund: '0',
+				cash: '0',
 				borrowMoney: '15000',
 				salary: {
 					salary: '12000',
-					salaryCount: '4',
+					salaryCount: '3',
 				},
 				publicReserveFund: {
 					publicReserveFund: '9000',
 					publicReserveFundCount: '0',
 				},
 				yearEndBonus: '14000',
-        other: '0',
+        other: '1800',
 			},
 			outcome: {
 				loan: {
 					loan: '6954.06',
-					loanCount: '3',
+					loanCount: '2',
 				},
 				livingExpenses1: {
 					livingExpenses1: '2000',
-					livingExpenses1Count: '1',
+					livingExpenses1Count: '0',
 				},
 				livingExpenses2: {
 					livingExpenses2: '2800',
 					livingExpenses2Count: '2',
 				},
 				betrothalGifts: '78000',
-				bracelet: '15000',
+				bracelet: '0',
 				rent: {
 					rent: '7650',
 					rentCount: '1',
