@@ -142,7 +142,7 @@ export default {
 					livingExpenses2: '2800',
 					livingExpenses2Count: '1',
 				},
-				betrothalGifts: '78000',
+				betrothalGifts: '86000',
 				bracelet: '0',
 				rent: {
 					rent: '7650',
