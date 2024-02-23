@@ -17,6 +17,12 @@
 			"style": {
 				"navigationBarTitleText": "资产"
 			}
+		},
+		{
+			"path": "pages/deposit/index",
+			"style": {
+				"navigationBarTitleText": "存款"
+			}
 		}
 	],
   "easycom": {

@@ -112,7 +112,7 @@ export default {
 			outcomeSum: 0,
 			unfilledVacancies: 0,
 			income: {
-				chinaMerchantsBank: '80548',
+				chinaMerchantsBank: '173305.24',
 				industrialBankOfChina: '0',
 				constructionBank: '129',
 				fund: '0',
@@ -120,7 +120,7 @@ export default {
 				borrowMoney: '15000',
 				salary: {
 					salary: '12000',
-					salaryCount: '2',
+					salaryCount: '1',
 				},
 				publicReserveFund: {
 					publicReserveFund: '9000',
@@ -142,7 +142,7 @@ export default {
 					livingExpenses2: '2800',
 					livingExpenses2Count: '1',
 				},
-				betrothalGifts: '86000',
+				betrothalGifts: '166000',
 				bracelet: '0',
 				rent: {
 					rent: '7650',

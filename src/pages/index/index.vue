@@ -22,6 +22,10 @@
             title: '计算',
             url: '../calculate/index',
           },
+          {
+            title: '存款',
+            url: '../deposit/index',
+          },
         ],
 			};
 		},
