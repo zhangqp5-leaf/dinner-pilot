@@ -1,4 +1,4 @@
-const dishLink = 'https://loquatlo.gitee.io/img-bed/food-imgs/';
+const dishLink = 'http://122.51.12.76:2119/static/images/food-imgs/';
 
 export const dishList = [
   {
