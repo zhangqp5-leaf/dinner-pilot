@@ -18,10 +18,10 @@
             title: '菜单',
             url: '../menu/index',
           },
-          {
-            title: '计算',
-            url: '../calculate/index',
-          },
+          // {
+          //   title: '计算',
+          //   url: '../calculate/index',
+          // },
           {
             title: '存款',
             url: '../deposit/index',
